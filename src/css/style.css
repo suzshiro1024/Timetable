@@ -104,3 +104,33 @@ td.message {
     opacity: 0;
   }
 }
+
+.local{
+  background-color: black;
+  color: white;
+}
+
+.semi_express{
+  background-color: green;
+  color: white;
+}
+
+.express{
+  background-color: blue;
+  color: white;
+}
+
+.rapid_express{
+  background-color: white;
+  color: blue;
+}
+
+.limited_express{
+  background-color: red;
+  color: white;
+}
+
+.rapid_limited_express,.mu_sky{
+  background-color: white;
+  color: red;
+}
