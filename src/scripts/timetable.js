@@ -11,12 +11,22 @@ function getTimetable() {
   message.classList.remove("arriving");
   type.classList.remove("local","semi_express","express","rapid_express","limited_express","rapid_limited_express","mu_sky");
 
+  //表示をリセット
+  track.textContent = "";
+  type.textContent = "";
+  dst.textContent = "";
+  departure.textContent = "";
+  message.textContent = "";
+
   let time = new Date();
   let month = time.getMonth() + 1;;
   let date = time.getDate();
   let day = time.getDay();
   let hour = time.getHours();
   let min = time.getMinutes();
+
+  //minは二桁で表示するよう調整
+  min = min < 10 ? "0" + min : min;
 
   //今日が土日か平日かを判定
   //TODO 祝日判定の追加も検討中
