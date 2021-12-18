@@ -87,7 +87,7 @@ function getTimetable() {
     }
 
     //もし列車が到着している場合、列車が到着していることを点滅表示で強調する
-    if(Number((result.arrive).replace(":","")) == Number(time_current)){
+    if(Number((result.arrive).replace(":","")) <= Number(time_current) && Number(time_current) <= Number((result.departure).replace(":",""))){
       message.textContent = "Train Approaching"
       message.classList.add("arriving");
     }
