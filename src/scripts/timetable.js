@@ -7,6 +7,10 @@ const message = document.getElementById("message");
 
 //現在時刻から一番近い列車を取得する関数
 function getTimetable() {
+  //種別色、点滅等をリセット
+  message.classList.remove("arriving");
+  type.classList.remove("local","semi_express","express","rapid_express","limited_express","rapid_limited_express","mu_sky");
+
   let time = new Date();
   let month = time.getMonth() + 1;;
   let date = time.getDate();
@@ -22,6 +26,7 @@ function getTimetable() {
   } else {
     today = "WD";
   }
+  today = "WD";
 
   //駅名
   const sta_value = station.value;
