@@ -26,7 +26,6 @@ function getTimetable() {
   } else {
     today = "WD";
   }
-  today = "WD";
 
   //駅名
   const sta_value = station.value;
