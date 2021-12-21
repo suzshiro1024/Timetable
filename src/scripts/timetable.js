@@ -113,10 +113,10 @@ function getTimetable() {
 
 window.onload = function () {
   getTimetable();
-  setInterval(getTimetable,30000);
+  setInterval(getTimetable,10000);
 };
 
 station.addEventListener("change",function () {
   getTimetable();
-  setInterval(getTimetable,30000);
+  setInterval(getTimetable,10000);
 });
