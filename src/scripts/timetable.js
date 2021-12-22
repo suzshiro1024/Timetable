@@ -41,7 +41,6 @@ function getTimetable() {
   const sta_value = station.value;
   //現在時刻
   let time_current = `${hour}${min}`;
-  console.log(time_current);
   let array;
 
   //時刻表を選択する
