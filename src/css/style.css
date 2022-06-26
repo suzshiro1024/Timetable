@@ -2,135 +2,137 @@
 @import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
 
 body {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 .background {
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-  align-items: center;
-  justify-items: center;
-  text-align: center;
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
 }
 
 #station {
-  /*ブラウザ毎の特別なスタイルを無効化*/
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  /*中央寄せ*/
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /*表示設定*/
-  border: solid 1px rgb(0, 255, 234);
-  /*外形*/
-  width: 800px;
-  padding: 0px;
-  text-align: center;
-  box-sizing: border-box;
-  /*文字に関する設定*/
-  justify-content: center;
-  font-family: "play", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: rgb(0, 255, 234);
-  background-color: black;
-  text-decoration: none;
-  letter-spacing: 0.1rem;
+	/*ブラウザ毎の特別なスタイルを無効化*/
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/*中央寄せ*/
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*表示設定*/
+	border: solid 1px rgb(0, 255, 234);
+	/*外形*/
+	width: 800px;
+	padding: 0px;
+	text-align: center;
+	box-sizing: border-box;
+	/*文字に関する設定*/
+	justify-content: center;
+	font-family: "play", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: rgb(0, 255, 234);
+	background-color: black;
+	text-decoration: none;
+	letter-spacing: 0.1rem;
 }
 
 table {
-  display: block;
-  /*中央寄せ*/
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /*表示設定*/
-  border: solid 2px rgb(0, 255, 234);
-  white-space: nowrap;
-  /*外形*/
-  text-align: center;
-  box-sizing: border-box;
-  /*罫線*/
-  border-collapse: collapse;
+	display: block;
+	/*中央寄せ*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*表示設定*/
+	border: solid 2px rgb(0, 255, 234);
+	white-space: nowrap;
+	/*外形*/
+	text-align: center;
+	box-sizing: border-box;
+	/*罫線*/
+	border-collapse: collapse;
 }
 
 th,
 td {
-  /*文字に関する設定*/
-  justify-content: center;
-  font-family: "play", sans-serif;
-  font-size: 35px;
-  font-weight: normal;
-  color: rgb(0, 255, 234);
-  background-color: black;
-  text-decoration: none;
-  letter-spacing: 0.1rem;
-  padding-left: 10px;
-  padding-right: 10px;
+	/*文字に関する設定*/
+	justify-content: center;
+	font-family: "play", sans-serif;
+	font-size: 35px;
+	font-weight: normal;
+	color: rgb(0, 255, 234);
+	background-color: black;
+	text-decoration: none;
+	letter-spacing: 0.1rem;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 tr.next {
-  /*罫線*/
-  border-top: solid 1px rgb(0, 255, 234);
+	/*罫線*/
+	border-top: solid 1px rgb(0, 255, 234);
 }
 
 tr.remarks {
-  /*罫線*/
-  border-top: solid 1px rgb(0, 255, 234);
+	/*罫線*/
+	border-top: solid 1px rgb(0, 255, 234);
 }
 
 td.message {
-  /*文字に関する設定*/
-  font-size: 25px;
+	/*文字に関する設定*/
+	font-size: 25px;
 }
 
 .arriving {
-  animation: flash 1.5s linear infinite;
+	animation: flash 1.5s linear infinite;
 }
 
 @keyframes flash {
-  0%,
-  100% {
-    opacity: 1;
-  }
 
-  50% {
-    opacity: 0;
-  }
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
 }
 
-.local{
-  background-color: black;
-  color: white;
+.local {
+	background-color: black;
+	color: white;
 }
 
-.semi_express{
-  background-color: green;
-  color: white;
+.semi_express {
+	background-color: green;
+	color: white;
 }
 
-.express{
-  background-color: blue;
-  color: white;
+.express {
+	background-color: blue;
+	color: white;
 }
 
-.rapid_express{
-  background-color: white;
-  color: blue;
+.rapid_express {
+	background-color: white;
+	color: blue;
 }
 
-.limited_express{
-  background-color: red;
-  color: white;
+.limited_express {
+	background-color: red;
+	color: white;
 }
 
-.rapid_limited_express,.mu_sky{
-  background-color: white;
-  color: red;
+.rapid_limited_express,
+.mu_sky {
+	background-color: white;
+	color: red;
 }

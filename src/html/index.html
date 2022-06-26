@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>Timetable</title>
-  </head>
 
-  <body>
-    <div class="background">
-      <select id="station">
-        <option value="IY11_UP">柏森駅(IY11) 名古屋方面</option>
-        <option value="IY11_DOWN">柏森駅(IY11) 新鵜沼方面</option>
-      </select>
-      <table>
-        <tr>
-          <!--行先、種別によって幅が変わるのは困るためth側に幅を作っておく。無理やりすぎるので他のやり方が必要そう-->
-          <th scope="col">のりば</th>
-          <th scope="col">　　　種別　　　</th>
-          <th scope="col">　　　　行先　　　　</th>
-          <th scope="col">発車時刻</th>
-        </tr>
-        <tr class="next">
-          <td id="track"></td>
-          <td id="type"></td>
-          <td id="dst"></td>
-          <td id="departure"></td>
-        </tr>
-        <tr class="remarks">
-          <td colspan="4" id="message"></td>
-        </tr>
-      </table>
-    </div>
-    <script type="text/javascript" src="../scripts/timetable.js"></script>
-    <script type="text/javascript" src="../scripts/IY11_UP_WD.js"></script>
-    <script type="text/javascript" src="../scripts/IY11_UP_HD.js"></script>
-  </body>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<title>Timetable</title>
+</head>
+
+<body>
+	<div class="background">
+		<select id="station">
+			<option value="IY11_UP">柏森駅(IY11) 名古屋方面</option>
+			<option value="IY11_DOWN">柏森駅(IY11) 新鵜沼方面</option>
+		</select>
+		<table>
+			<tr>
+				<!--行先、種別によって幅が変わるのは困るためth側に幅を作っておく。無理やりすぎるので他のやり方が必要そう-->
+				<th scope="col">のりば</th>
+				<th scope="col">　　　種別　　　</th>
+				<th scope="col">　　　　行先　　　　</th>
+				<th scope="col">発車時刻</th>
+			</tr>
+			<tr class="next">
+				<td id="track"></td>
+				<td id="type"></td>
+				<td id="dst"></td>
+				<td id="departure"></td>
+			</tr>
+			<tr class="remarks">
+				<td colspan="4" id="message"></td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript" src="../scripts/timetable.js"></script>
+	<script type="text/javascript" src="../scripts/IY11_UP_WD.js"></script>
+	<script type="text/javascript" src="../scripts/IY11_UP_HD.js"></script>
+</body>
+
 </html>
